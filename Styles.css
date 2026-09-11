@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-card {
+    max-width: 480px;
+    width: 100%;
+}
+
+#color-box {
+    height: 160px;
+    background-color: rgb(128, 128, 128);
+    transition: background-color 0.1s ease;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.color-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#color-box:hover .color-overlay {
+    opacity: 1;
+}
+
+.text-shadow {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.color-num-input {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-control-color {
+    height: 45px;
+    cursor: pointer;
+    border-radius: 8px;
+}
